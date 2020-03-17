@@ -1,3 +1,3 @@
   var quotes=new Array();
-	quotes[0]="<q>Quote 1</q>";
-	quotes[1]="<q>Quote 2</q>";
+	quotes[0]="<q>Πόλεμος των Άστρων</q>";
+	quotes[1]="<q>Το Παιχνίδι του Στέματος</q>";
