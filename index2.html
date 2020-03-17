@@ -1,74 +1,21 @@
 <html>
- <head>
- </head>
- <body  onload="Start()">
-<script>
- import System.IO;
- var fileName = "list.txt";
-  
- function Start2 () {
- 
-      // read from filename
-     var sr = new StreamReader(Application.dataPath + "/" + fileName);
-     var fileContents = sr.ReadToEnd();
-     sr.Close();
-  
-      // put data from filename into a variable
-     var mydata = fileContents.Split("\n"[0]);
- 
-     // pick a random number between 1 and 10
-     var myrandom = Random.Range(1,10);
-     print(mydata[myrandom]);
-  
-  
- }
-  
-  function Start() { // Declare a function
-  document.getElementById("demo").innerHTML = "Hello World!";
-}
-  
-  
-  </script> 
-
-Hello World
-  
-  <p id="demo">
-  </p>
-  
-  
-  <button onclick="Start3()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World3";
-}
- 
-  import System.IO;
- var fileName = "list.txt";
-  
- function Start3 () {
- 
-      // read from filename
-     var sr = new StreamReader(Application.dataPath + "/" + fileName);
-     var fileContents = sr.ReadToEnd();
-     sr.Close();
-  
-      // put data from filename into a variable
-     var mydata = fileContents.Split("\n"[0]);
- 
-     // pick a random number between 1 and 10
-     var myrandom = Random.Range(1,2);
-     //print(mydata[myrandom]);
-//    document.getElementById("demo").innerHTML = mydata[myrandom];
-    document.getElementById("demo").innerHTML = str(myrandom);
-
-  
- }
-</script> 
-  
-  
- </body>
+  <head>
+	<title>Random Quotes</title>
+	<script language="JavaScript" type="text/javascript" src="quoteArray.js"></script>
+	<script language="JavaScript" type="text/javascript">
+	<!--
+	  function getQuote(){
+		var thisquote=Math.floor(Math.random()*(quotes.length));
+		document.write(quotes[thisquote]);
+	  }
+	//-->
+	</script>
+  </head>
+  <body>
+	<script language="JavaScript" type="text/javascript">
+	<!--
+	  getQuote();
+	//-->
+	</script>
+  </body>
 </html>
-
